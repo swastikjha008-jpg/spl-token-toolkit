@@ -1,0 +1,31 @@
+{
+  "name": "solana-token-toolkit",
+  "version": "1.0.0",
+  "description": "SPL token toolkit: create mint, create associated token account, mint tokens, derive ATA/PDA manually.",
+  "main": "src/config.js",
+  "scripts": {
+    "create-mint": "node src/create-mint.js",
+    "create-ata": "node src/create-ata.js",
+    "mint": "node src/mint-tokens.js",
+    "balance": "node src/balance.js",
+    "derive-ata": "node src/derive-ata.js",
+    "pda-compare": "node src/pda-compare.js"
+  },
+  "keywords": [
+    "solana",
+    "spl-token",
+    "ata",
+    "pda",
+    "web3"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@solana/spl-token": "^0.4.8",
+    "@solana/web3.js": "^1.95.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
+  }
+}
